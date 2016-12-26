@@ -319,7 +319,7 @@ span.kei {
     position: fixed;
     bottom: 20px;
     right: 25px;
-    
+
 }
 #page-top a {
     width: 45px;
@@ -434,20 +434,20 @@ table#footer-sp tr td.sp-two {
 
 
 /* ########## Common ########## */
-.clearfix:after {  
-  content: ".";   
-  display: block;   
-  height: 0;   
-  clear: both;   
-  visibility: hidden;  
-}  
-  
-.clearfix { display: inline-table; }  
-  
-/* Hides from IE-mac \*/  
-* html .clearfix { height: 1%; }  
-.clearfix { display: block; }  
-/* End hide from IE-mac */ 
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+.clearfix { display: inline-table; }
+
+/* Hides from IE-mac \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* End hide from IE-mac */
 
 @media screen and (max-width: 959px){
 #pcon {display:none!important;}
@@ -455,4 +455,8 @@ table#footer-sp tr td.sp-two {
 
 @media screen and (min-width:960px){
 #spon {display:none!important;}
+}
+
+#bled_tmp {
+  margin-right:160px;
 }
