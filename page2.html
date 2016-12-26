@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>JEPICOオフィシャルページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="css/page.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/sl-style.css" type="text/css" media="screen">
+
+<link type="text/css" rel="stylesheet" href="css/sp-nav.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+				var $header = $('#top-head');
+
+				// Nav Fixed
+				$(window).scroll(function() {
+					if ($(window).scrollTop() > 300) {
+						$header.addClass('fixed');
+					} else {
+						$header.removeClass('fixed');
+					}
+				});
+
+				// Nav Toggle Button
+				$('#nav-toggle').click(function(){
+					$header.toggleClass('open');
+				});
+
+			});
+		})(jQuery);
+	</script>
+
+	<script>
+		$(window).on('load', function() {
+				var url = $(location).attr('href');
+				if(url.indexOf("?id=") != -1){
+				var id = url.split("?id=");
+				var $target = $('#' + id[id.length - 1]);
+        		if($target.length){
+				var pos = $target.offset().top;
+            	$("html, body").animate({scrollTop:pos}, 1500);
+				}
+			}
+		});
+	</script>
+
+
+
+</head>
+
+<body>
+<div id="pcon">
+<header>
+<div class="hd-detail">
+<div class="hd-box">
+<div class="left"><a href="front-page.html"><img src="images/logo.gif"></a></div>
+<div class="right">
+<img src="images/top-kei.png"> <a href="http://www.jepico.co.jp/company/about/">会社概要</a>　<img src="images/top-kei.png"> <a href="http://www.jepico.co.jp/recruit/">採用情報</a>
+</div>
+</div>
+
+<nav>
+<ul>
+<li class="btn1"><a href="page1.html"></a></li>
+<li class="btn2"><a href="page2.html"></a></li>
+<li class="btn3"><a href="page3.html"></a></li>
+<li class="btn4"><a href="page4.html"></a></li>
+</ul>
+</nav>
+</div>
+</header>
+</div>
+
+<div id="spon">
+<header id="top-head">
+	<div class="inner">
+		<div id="mobile-head">
+		<h1 class="logo"><a href="front-page.html"><img src="images/logo.gif"></a></h1>
+			<div id="nav-toggle">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="page1.html"><img src="images/sp-menu1.gif" class="lil"> アナログASIC事業</a></li>
+				<li><a href="page2.html"><img src="images/sp-menu2.gif" class="lil"> 開発事例</a></li>
+				<li><a href="page3.html"><img src="images/sp-menu3.gif" class="lil"> 品質への取り組み</a></li>
+				<li><a href="page4.html"><img src="images/sp-menu4.gif" class="lil"> お問い合わせ</a></li>
+				<li><a href="http://www.jepico.co.jp/company/about/">> 会社概要</a></li>
+				<li><a href="http://www.jepico.co.jp/recruit/">> 採用情報</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+</div>
+
+
+
+<div class="slide2" id="slide_ac2" data-slide="2" data-stellar-background-ratio="0.5">
+
+<div class="inner">
+<div id="pcon">
+<p class="usp"><img src="images/page2/usp-3.png"></p>
+</div>
+<div id="spon">
+<center><img src="images/page2/usp-3.png" width="80%"></center>
+</div>
+</div>
+</div>
+
+<div id="pcon">
+<ul class="pg2-nav clearfix">
+<li class="btn1"><a href="?id=section1"></a></li>
+<li class="btn2"><a href="?id=section2"></a></li>
+<li class="btn3"><a href="?id=section3"></a></li>
+<li class="btn4"><a href="?id=section4"></a></li>
+</ul>
+</div>
+
+<div id="spon">
+<ul class="pg2-nav">
+<li><a href="page2.html?js-hash=section1"><img src="images/page2/sp-cot2-btn1.jpg" width="100%"></a></li>
+<li><a href="page2.html?id=section2"><img src="images/page2/sp-cot2-btn2.jpg" width="100%"></a></li>
+<li><a href="page2.html?id=section3"><img src="images/page2/sp-cot2-btn3.jpg" width="100%"></a></li>
+<li><a href="page2.html?id=section4"><img src="images/page2/sp-cot2-btn4.jpg" width="100%"></a></li>
+</ul>
+</div>
+
+<div id="pcon">
+<div class="contents3-1">
+<p class="m-logo" id="section1"><img src="images/page2/title1-logo.jpg"></p>
+<h3>各種センサーのドライブ回路および、各種の増幅回路、フィルタ回路、検出回路を最適に配置し、<br>
+所望のアナログ信号成分のみを抽出いたします。</h3>
+
+
+<div class="inner2">
+<h4>産業機器向け　センサー信号処理IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img1.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>高ゲインアンプ</li>
+<li>柔軟なフィルタ設定(BPF, LPF, HPF)</li>
+<li>ピークホールド検波回路</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">入力センサーの特性に応じて、最適なインピーダンス、フィルタ配分、ゲイン配分をご提案いたします。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　センサー信号処理IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img2.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>センサードライバ</li>
+<li>入力マルチプレクサ</li>
+<li>ゲインコントロールアンプ</li>
+<li>オフセット調整機能</li>
+<li>ピークホールド検波回路</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">多数のセンサーアレイに対して、マルチプレクサ入力による時分割制御を行うことにより、実装面積の大幅な縮小が可能となります。オフセット調整機構は、センサー毎のバラツキを調整するように複数値を設定することも可能です。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　センサー信号処理IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img3.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>センサードライバ</li>
+<li>計装アンプ</li>
+<li>半波整流回路</li>
+<li>ピークホールド検波回路</li>
+<li>タイミング回路</li>
+<li>オフセット調整機能</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">センサーのドライバ回路と計測回路を同一IC内に収めることにより、タイミングやゲインの細やかな制御が可能になります。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　センサー信号処理IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img4.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>計装アンプ</li>
+<li>自己オフセット調整回路</li>
+<li>検出回路</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">AGCやPLLなどのアナログ演算回路を使用し、各種調整をリアルタイムで行うことが可能です。</p>
+</div>
+
+
+</div>
+<!-- contents3-1 -->
+
+<div class="cont3-wrap">
+<div class="contents3-1">
+<p class="m-logo" id="section2"><img src="images/page2/title2-logo.jpg"></p>
+<h3>LDO, シャントレギュレータ, DCDCコンバータ等各種電源回路の複合化、デジタル制御による<br>
+インテリジェント化により、高精度、低消費電力なセットを実現いたします。</h3>
+
+<div class="inner2">
+<h4>産業機器向け　インテリジェント電源IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img5.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>複数LDOのインテリジェント化</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">アプリケーションに完全に適合した電源ICを使用することにより、消費電力低減を実現することが可能になります。</p>
+</div>
+
+<hr class="cont3">
+
+
+<div class="inner2">
+<h4>産業機器向け　複合電源+アナログ演算IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img6.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>降圧DCDCコンバータ</li>
+<li>シャントレギュレータ</li>
+<li>多数のOPAMP回路</li>
+<li>多数のコンパレータ回路</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">機能毎に最適な電源回路を選択することにより、ノイズ特性の改善、高速応答性能の追及等の高性能化を検討いたします。</p>
+</div>
+
+</div>
+</div>
+<!-- contents3-2 -->
+
+
+<div class="contents3-1">
+<p class="m-logo" id="section3"><img src="images/page2/title3-logo.jpg"></p>
+<h3>シリコンデバイス上ではアナログ―デジタル間の<br>
+差はございません。<br>
+トランジスタ単位では同一の素子を使用しており、<br>
+両者を分けるのは設計開発環境のみです。<br>
+ジェピコではアナログーデジタルの垣根なく、
+精度向上の追及を行います。</h3>
+<div class="inner2">
+<h4>OA機器向け　センサー信号処理IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img7.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>～1Mゲートのロジック回路</li>
+<li>SRAM, FROM搭載</li>
+<li>高速ADC 10bit</li>
+<li>DAC 10bit</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">アナログ信号処理、オフセット調整機構、デジタル変換およびデータ処理を一貫して行うことにより後段MPUでの処理が飛躍的に軽量化し、システムのパフォーマンスを高めることが可能となります。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　周波数応答センサー駆動IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img8.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>可変周波数発振器</li>
+<li>多チャンネル</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">ロジックによる設定値の決定演算、アナログによる柔軟な調整機能により高度なシステムを構成いたします。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　周波数応答センサー駆動IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img9.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>多チャンネル</li>
+<li>高電圧</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">ロジックによる柔軟な並列処理に加え、アナログベースの高電圧・高電流によりさまざまなアプリケーションに対応いたします。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner2">
+<h4>OA機器向け　周波数応答センサー駆動IC</h4>
+<div class="box clearfix">
+<div class="left">
+<img src="images/page2/img10.png" width="100%">
+</div>
+<div class="right">
+<ul>
+<li>多チャンネル</li>
+<li>高電圧</li>
+<li>高速</li>
+</ul>
+</div>
+</div>
+<p class="txt-pg2">各種インターフェイスに対応し、柔軟なシステム構築を可能にいたします。</p>
+</div>
+
+</div>
+
+<!-- contents3-3 -->
+
+<div class="cont3-wrap">
+<div class="contents3-1">
+<p class="m-logo" id="section4"><img src="images/page2/title4-logo.jpg"></p>
+<div class="inner2">
+<h4>EOL 相当品開発サービス 概要　</h4>
+<p class="txt1-ls">10件以上の相当品開発実績</p>
+<p class="txt2-ls">半導体メーカーの工場閉鎖等により製品が製造中止となり、<br>
+まとめ発注では量産継続対応が困難なお客様に、別の新しいプロセスでの相当品開発をジェピコで実施しています。<br>
+仕様書を基にした開発も可能です。<br>
+相当品がそのまま載せ替えられるようパッケージについては、同等サイズのご提案をしております。<br>
+（事前にサンプルパッケージをお渡し実装検討をお願いしております。）<br>
+開発費・開発期間・単価について、お気軽に問い合わせ下さい。</p>
+<center><img src="images/page2/ill-lst.jpg" width="83%"></center>
+</div>
+</div>
+</div>
+
+<!-- contents3-4 -->
+</div>
+<!-- PC End -->
+
+<div id="spon">
+<div class="contents3-1">
+<p class="m-logo" id="section1"><img src="images/page2/title1-logo.jpg"  width="40%"></p>
+<h3>各種センサーのドライブ回路および、各種の増幅回路、フィルタ回路、検出回路を最適に配置し、<br>
+所望のアナログ信号成分のみを抽出いたします。</h3>
+<div class="inner">
+<img src="images/page2/title1-md1.jpg" width="100%">
+<img src="images/page2/img1.png" width="100%">
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>高ゲインアンプ</li>
+<li>柔軟なフィルタ設定(BPF, LPF, HPF)</li>
+<li>ピークホールド検波回路</li>
+</ul>
+</div>
+</div>
+<p>入力センサーの特性に応じて、最適なインピーダンス、フィルタ配分、ゲイン配分をご提案いたします。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner">
+<img src="images/page2/title1-md2.jpg" width="100%" style="margin: 20px 0 0 0;">
+<img src="images/page2/img2.png" width="100%">
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>センサードライバ</li>
+<li>入力マルチプレクサ</li>
+<li>ゲインコントロールアンプ</li>
+</ul>
+</div>
+<div class="l-box">
+<ul>
+<li>オフセット調整機能</li>
+<li>ピークホールド検波回路</li>
+</ul>
+</div>
+</div>
+<p>多数のセンサーアレイに対して、マルチプレクサ入力による時分割制御を行うことにより、実装面積の大幅な縮小が可能となります。オフセット調整機構は、センサー毎のバラツキを調整するように複数値を設定することも可能です。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner">
+<img src="images/page2/title1-md2.jpg" width="100%" style="margin: 20px 0 0 0;">
+<img src="images/page2/img3.png" width="100%">
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>センサードライバ</li>
+<li>計装アンプ</li>
+<li>半波整流回路</li>
+</ul>
+</div>
+<div class="l-box">
+<ul>
+<li>ピークホールド検波回路</li>
+<li>タイミング回路</li>
+<li>オフセット調整機能</li>
+</ul>
+</div>
+</div>
+<p>センサーのドライバ回路と計測回路を同一IC内に収めることにより、タイミングやゲインの細やかな制御が可能になります。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner">
+<img src="images/page2/title1-md2.jpg" width="100%" style="margin: 20px 0 0 0;">
+<img src="images/page2/img4.png" width="100%">
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>計装アンプ</li>
+<li>自己オフセット調整回路</li>
+<li>検出回路</li>
+</ul>
+</div>
+</div>
+<p>AGCやPLLなどのアナログ演算回路を使用し、各種調整をリアルタイムで行うことが可能です。</p>
+</div>
+
+
+</div>
+<!-- contents3-1 -->
+
+<div class="cont3-wrap">
+<div class="contents3-1">
+<p class="m-logo" id="section2"><img src="images/page2/title2-logo.jpg" width="25%"></p>
+<h3>LDO, シャントレギュレータ, DCDCコンバータ等<br>各種電源回路の複合化、デジタル制御による<br>
+インテリジェント化により、高精度、<br>低消費電力なセットを実現いたします。
+</h3>
+<div class="inner">
+<img src="images/page2/title2-md1.jpg" width="100%">
+<center><img src="images/page2/img5.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>複数LDOのインテリジェント化</li>
+</ul>
+</div>
+</div>
+<p>アプリケーションに完全に適合した電源ICを使用することにより、消費電力低減を実現することが可能になります。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner">
+<img src="images/page2/title2-md2.jpg" width="100%" style="margin: 20px 0 0 0;">
+<center><img src="images/page2/img6.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>降圧DCDCコンバータ</li>
+<li>シャントレギュレータ</li>
+<li>多数のOPAMP回路</li>
+</ul>
+</div>
+<div class="l-box">
+<ul>
+<li>多数のコンパレータ回路</li>
+</ul>
+</div>
+</div>
+<p>機能毎に最適な電源回路を選択することにより、ノイズ特性の改善、高速応答性能の追及等の高性能化を検討いたします。</p>
+</div>
+
+</div>
+</div>
+<!-- contents3-2 -->
+
+<div class="contents3-1">
+<p class="m-logo" id="section3"><img src="images/page2/title3-logo.jpg" width="53%"></p>
+<h3>シリコンデバイス上ではアナログ―デジタル間の<br>
+差はございません。<br>
+トランジスタ単位では同一の素子を使用しており、<br>
+両者を分けるのは設計開発環境のみです。<br>
+ジェピコではアナログーデジタルの垣根なく、
+精度向上の追及を行います。</h3>
+
+<div class="inner">
+<img src="images/page2/title3-md1.jpg" width="100%" style="margin: 20px 0 0 0;">
+<center><img src="images/page2/img7.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>～1Mゲートのロジック回路</li>
+<li>SRAM, FROM搭載</li>
+<li>多高速ADC 10bit</li>
+<li>DAC 10bit</li>
+</ul>
+</div>
+</div>
+<p>アナログ信号処理、オフセット調整機構、デジタル変換およびデータ処理を一貫して行うことにより後段MPUでの処理が飛躍的に軽量化し、システムのパフォーマンスを高めることが可能となります。</p>
+</div>
+
+<hr class="cont3">
+
+
+<div class="inner">
+<img src="images/page2/title3-md2.jpg" width="100%" style="margin: 20px 0 0 0;">
+<center><img src="images/page2/img8.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>可変周波数発振器</li>
+<li>多チャンネル</li>
+</ul>
+</div>
+</div>
+<p>ロジックによる設定値の決定演算、アナログによる柔軟な調整機能により高度なシステムを構成いたします。</p>
+</div>
+
+<hr class="cont3">
+
+
+<div class="inner">
+<img src="images/page2/title3-md3.jpg" width="100%" style="margin: 20px 0 0 0;">
+<center><img src="images/page2/img9.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>多チャンネル</li>
+<li>高電圧</li>
+</ul>
+</div>
+</div>
+<p>ロジックによる柔軟な並列処理に加え、アナログベースの高電圧・高電流によりさまざまなアプリケーションに対応いたします。</p>
+</div>
+
+<hr class="cont3">
+
+<div class="inner">
+<img src="images/page2/title3-md4.jpg" width="100%" style="margin: 20px 0 0 0;">
+<center><img src="images/page2/img10.png" width="80%"></center>
+<div class="box clearfix">
+<div class="l-box">
+<ul>
+<li>多チャンネル</li>
+<li>高電圧</li>
+<li>高速</li>
+</ul>
+</div>
+</div>
+<p>各種インターフェイスに対応し、柔軟なシステム構築を可能にいたします。</p>
+</div>
+
+</div>
+
+<!-- contents3-3 -->
+
+<div class="cont3-wrap">
+<div class="contents3-1">
+<p class="m-logo" id="section4"><img src="images/page2/title4-logo.jpg"></p>
+<div class="inner">
+<p class="txt1-ls">10件以上の相当品開発実績</p>
+<p class="txt2-ls">半導体メーカーの工場閉鎖等により製品が製造中止となり、<br>
+まとめ発注では量産継続対応が困難なお客様に、別の新しいプロセスでの相当品開発をジェピコで実施しています。<br>
+仕様書を基にした開発も可能です。<br>
+相当品がそのまま載せ替えられるようパッケージについては、同等サイズのご提案をしております。<br>
+（事前にサンプルパッケージをお渡し実装検討をお願いしております。）<br>
+開発費・開発期間・単価について、お気軽に問い合わせ下さい。</p>
+<center><img src="images/page2/ill-lst.jpg" width="100%"></center>
+</div>
+</div>
+</div>
+
+<!-- contents3-4 -->
+
+</div>
+
+
+<div id="pcon">
+<p class="btn-shop"><a href="page1.html?id=section2"></a></p>
+<ul class="pg2-nav clearfix">
+<li class="btn1"><a href="?id=section1"></a></li>
+<li class="btn2"><a href="?id=section2"></a></li>
+<li class="btn3"><a href="?id=section3"></a></li>
+<li class="btn4"><a href="?id=section4"></a></li>
+</ul>
+</div>
+
+<div id="spon">
+<center><a href="page1.html?id=section2"><img src="images/page2/sp-btn-shop.jpg" width="80%" style="margin: 50px 0"></a></center>
+<ul class="pg2-nav">
+<li><a href="?id=section1"><img src="images/page2/sp-cot2-btn1.jpg" width="100%"></a></li>
+<li><a href="?id=section2"><img src="images/page2/sp-cot2-btn2.jpg" width="100%"></a></li>
+<li><a href="?id=section3"><img src="images/page2/sp-cot2-btn3.jpg" width="100%"></a></li>
+<li><a href="?id=section4"><img src="images/page2/sp-cot2-btn4.jpg" width="100%"></a></li>
+</ul>
+</div>
+
+
+	<!-- ここからボタン -->
+	<p id="page-top"><a href="#wrap"></a></p>
+	<!-- ここまでボタン -->
+
+
+<footer>
+<div id="pcon">
+<table id="footer">
+<tr>
+<td class="one1"></td><td class="two"><a href="page1.html">アナログASIC事業</a></td><td class="three"></td><td class="four"><a href="page1.html?id=section1">製造パートナー</a>　　<a href="page1.html?id=section2">販売店</a>　　<a href="page1.html?id=section3">開発フロー</a></td>
+</tr>
+<tr>
+<td class="one2"></td><td class="two"><a href="page2.html">開発事例</a></td><td class="three"></td><td class="four"><a href="page2.html?id=section1">アナログ信号処理IC</a>　　<a href="page2.html?id=section2">電源管理IC</a>　　<a href="page2.html?id=section3">アナログ-デジタル複合IC</a>　　<a href="page2.html?id=section4">EOL相当品開発</a></td>
+</tr>
+<tr>
+<td class="one3"></td><td class="two"><a href="page3.html">品質への取り組み</a></td><td class="three"></td><td class="four"><a href="http://www.jepico.co.jp/iso_csr/quality/">品質管理に関する組織概要</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/assurance/">品質保証体系</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/complaint_handling/">コンプレイトフロー</a>　　<a href="http://www.jepico.co.jp/iso_csr/bcp/">事業継続</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso9001_jisq9100/">ISO9001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso14001/">ISO14001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso27001/">ISO27001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/environmental_chemicals/">製品の環境科学物質管理</a>　　<a href="http://www.jepico.co.jp/iso_csr/conflict_minerals/">紛争鉱物への対応</a></td>
+</tr>
+<tr>
+<td class="one4"></td><td class="two"><a href="page4.html">お問い合わせ</a></td><td class="three"></td><td class="four"><a href="page4.html">お問い合わせフォーム</a></td>
+</tr>
+</table>
+</div>
+
+<div id="spon">
+<table id="footer-sp">
+<tr>
+<td class="sp-one"><img src="images/footer-bled1.gif"> <a href="page1.html">アナログASIC事業</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page1.html?id=section1">製造パートナー</a>　　<a href="page1.html?id=section2">販売店</a>　　<a href="page1.html?id=section3">開発フロー</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled2.gif"> <a href="page2.html">開発事例</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page2.html?id=section1">アナログ信号処理IC</a>　　<a href="page2.html?id=section2">電源管理IC</a>　　<a href="page2.html?id=section3">アナログ-デジタル複合IC</a>　　<a href="page2.html?id=section4">EOL相当品開発</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled3.gif"> <a href="page3.html">品質への取り組み</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="#">品質管理に関する組織概要</a>　　<a href="#">品質保証体系</a>　　<a href="#">コンプレイトフロー</a>　　<a href="#">事業継続</a>　　<a href="#">ISO9001認証</a>　　<a href="#">ISO14001認証</a>　　<a href="#">ISO27001認証</a>　　<a href="#">製品の環境科学物質管理</a>　　<a href="#">紛争鉱物への対応</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled4.gif"> <a href="page4.html">お問い合わせ</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page4.html">お問い合わせフォーム</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+</table>
+</div>
+
+<p class="f-nav"><span class="kei"></span>　<a href="http://www.jepico.co.jp/">JEPICO企業ページ</a>　<span class="kei"></span>　<a href="http://www.jepico.co.jp/privacy/">プライバシーポリシー</a>　<span class="kei"></span></p>
+<p class="cop">Copyright<span class="f14">&copy;</span> JEPICO Corporation. All rights reserved.</p>
+</footer>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+<script src="js/to-top.js"></script>
+</body>
+</html>

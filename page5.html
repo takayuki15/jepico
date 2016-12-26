@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>JEPICOオフィシャルページ</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="css/page.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/normalize.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/grid.css" type="text/css" media="screen">
+<link rel="stylesheet" href="css/sl-style.css" type="text/css" media="screen">
+
+<link type="text/css" rel="stylesheet" href="css/sp-nav.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+		(function($) {
+			$(function() {
+				var $header = $('#top-head');
+
+				// Nav Fixed
+				$(window).scroll(function() {
+					if ($(window).scrollTop() > 300) {
+						$header.addClass('fixed');
+					} else {
+						$header.removeClass('fixed');
+					}
+				});
+
+				// Nav Toggle Button
+				$('#nav-toggle').click(function(){
+					$header.toggleClass('open');
+				});
+
+			});
+		})(jQuery);
+	</script>
+
+	<script>
+		$(window).on('load', function() {
+				var url = $(location).attr('href');
+				if(url.indexOf("?id=") != -1){
+				var id = url.split("?id=");
+				var $target = $('#' + id[id.length - 1]);
+        		if($target.length){
+				var pos = $target.offset().top;
+            	$("html, body").animate({scrollTop:pos}, 1500);
+				}
+			}
+		});
+	</script>
+</head>
+
+<body>
+<div id="pcon">
+<header>
+<div class="hd-detail">
+<div class="hd-box">
+<div class="left"><a href="front-page.html"><img src="images/logo.gif"></a></div>
+<div class="right">
+<img src="images/top-kei.png"> <a href="http://www.jepico.co.jp/company/about/">会社概要</a>　<img src="images/top-kei.png"> <a href="http://www.jepico.co.jp/recruit/">採用情報</a>
+</div>
+</div>
+
+<nav>
+<ul>
+<li class="btn1"><a href="page1.html"></a></li>
+<li class="btn2"><a href="page2.html"></a></li>
+<li class="btn3"><a href="page3.html"></a></li>
+<li class="btn4"><a href="page4.html"></a></li>
+</ul>
+</nav>
+</div>
+</header>
+</div>
+
+<div id="spon">
+<header id="top-head">
+	<div class="inner">
+		<div id="mobile-head">
+		<h1 class="logo"><a href="front-page.html"><img src="images/logo.gif"></a></h1>
+			<div id="nav-toggle">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="page1.html"><img src="images/sp-menu1.gif" class="lil"> アナログASIC事業</a></li>
+				<li><a href="page2.html"><img src="images/sp-menu2.gif" class="lil"> 開発事例</a></li>
+				<li><a href="page3.html"><img src="images/sp-menu3.gif" class="lil"> 品質への取り組み</a></li>
+				<li><a href="page4.html"><img src="images/sp-menu4.gif" class="lil"> お問い合わせ</a></li>
+				<li><a href="http://www.jepico.co.jp/company/about/">> 会社概要</a></li>
+				<li><a href="http://www.jepico.co.jp/recruit/">> 採用情報</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+</div>
+
+<div id="spon">
+<header id="top-head">
+	<div class="inner">
+		<div id="mobile-head">
+			<h1 class="logo"><img src="images/logo.gif"></h1>
+			<div id="nav-toggle">
+				<div>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+		</div>
+		<nav id="global-nav">
+			<ul>
+				<li><a href="page1.html"><img src="images/sp-menu1.gif" class="lil"> アナログASIC事業</a></li>
+				<li><a href="page2.html"><img src="images/sp-menu2.gif" class="lil"> 開発事例</a></li>
+				<li><a href="page3.html"><img src="images/sp-menu3.gif" class="lil"> 品質への取り組み</a></li>
+				<li><a href="page4.html"><img src="images/sp-menu4.gif" class="lil"> お問い合わせ</a></li>
+				<li><a href="http://www.jepico.co.jp/company/about/">> 会社概要</a></li>
+				<li><a href="http://www.jepico.co.jp/recruit/"> 採用情報</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+</div>
+
+<div id="wrap">
+
+<p class="top-news-logo"><img src="images/news-md.png"></p>
+
+<table id="news">
+<tr><td>2016-12-27</td><td><img src="images/new-bled.png"></td><td><a href="page6.html">㈱ジェピコ　「アナログASIC事業」の専用サイトをオープンしました</a></td></tr>
+<tr><td>2016-10-28</td><td><img src="images/new-bled.png"></td><td><a href="page6.html">量産品　出荷数量　累計1,500万個を達成</a></td></tr>
+<tr><td>2016-08-26</td><td><img src="images/new-bled.png"></td><td><a href="page6.html">ASIC開発受注件数　累計40件を達成</a></td></tr>
+<tr><td>2016-06-30</td><td><img src="images/new-bled.png"></td><td><a href="page6.html">新宿フロントタワー３４Ｆに移転しました</a></td></tr>
+<tr><td>2016-04-26</td><td><img src="images/new-bled.png"></td><td><a href="page6.html">ボード　ソリューションサービスを開始しました</a></td></tr>
+</table>
+
+
+
+
+<!-- <p class="send-btn"><a href="#"><img src="images/page5/more-btn.jpg"></a></p> -->
+
+</div>
+	<!-- ここからボタン -->
+	<p id="page-top"><a href="#wrap"></a></p>
+	<!-- ここまでボタン -->
+
+
+<footer>
+<div id="pcon">
+<table id="footer">
+<tr>
+<td class="one1"></td><td class="two"><a href="page1.html">アナログASIC事業</a></td><td class="three"></td><td class="four"><a href="page1.html?id=section1">製造パートナー</a>　　<a href="page1.html?id=section2">販売店</a>　　<a href="page1.html?id=section3">開発フロー</a></td>
+</tr>
+<tr>
+<td class="one2"></td><td class="two"><a href="page2.html">開発事例</a></td><td class="three"></td><td class="four"><a href="page2.html?id=section1">アナログ信号処理IC</a>　　<a href="page2.html?id=section2">電源管理IC</a>　　<a href="page2.html?id=section3">アナログ-デジタル複合IC</a>　　<a href="page2.html?id=section4">EOL相当品開発</a></td>
+</tr>
+<tr>
+<td class="one3"></td><td class="two"><a href="page3.html">品質への取り組み</a></td><td class="three"></td><td class="four"><a href="http://www.jepico.co.jp/iso_csr/quality/">品質管理に関する組織概要</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/assurance/">品質保証体系</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/complaint_handling/">コンプレイトフロー</a>　　<a href="http://www.jepico.co.jp/iso_csr/bcp/">事業継続</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso9001_jisq9100/">ISO9001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso14001/">ISO14001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/iso27001/">ISO27001認証</a>　　<a href="http://www.jepico.co.jp/iso_csr/quality/environmental_chemicals/">製品の環境科学物質管理</a>　　<a href="http://www.jepico.co.jp/iso_csr/conflict_minerals/">紛争鉱物への対応</a></td>
+</tr>
+<tr>
+<td class="one4"></td><td class="two"><a href="page4.html">お問い合わせ</a></td><td class="three"></td><td class="four"><a href="page4.html">お問い合わせフォーム</a></td>
+</tr>
+</table>
+</div>
+
+<div id="spon">
+<table id="footer-sp">
+<tr>
+<td class="sp-one"><img src="images/footer-bled1.gif"> <a href="page1.html">アナログASIC事業</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page1.html?id=section1">製造パートナー</a>　　<a href="page1.html?id=section2">販売店</a>　　<a href="page1.html?id=section3">開発フロー</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled2.gif"> <a href="page2.html">開発事例</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page2.html?id=section1">アナログ信号処理IC</a>　　<a href="page2.html?id=section2">電源管理IC</a>　　<a href="page2.html?id=section3">アナログ-デジタル複合IC</a>　　<a href="page2.html?id=section4">EOL相当品開発</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled3.gif"> <a href="page3.html">品質への取り組み</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="#">品質管理に関する組織概要</a>　　<a href="#">品質保証体系</a>　　<a href="#">コンプレイトフロー</a>　　<a href="#">事業継続</a>　　<a href="#">ISO9001認証</a>　　<a href="#">ISO14001認証</a>　　<a href="#">ISO27001認証</a>　　<a href="#">製品の環境科学物質管理</a>　　<a href="#">紛争鉱物への対応</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+<tr>
+<td class="sp-one"><img src="images/footer-bled4.gif"> <a href="page4.html">お問い合わせ</a></td>
+</tr>
+<tr>
+<td class="sp-two"><a href="page4.html">お問い合わせフォーム</a></td>
+</tr>
+<tr>
+<td>
+<hr class="foot">
+</td>
+</tr>
+</table>
+</div>
+
+<p class="f-nav"><span class="kei"></span>　<a href="http://www.jepico.co.jp/">JEPICO企業ページ</a>　<span class="kei"></span>　<a href="http://www.jepico.co.jp/privacy/">プライバシーポリシー</a>　<span class="kei"></span></p>
+<p class="cop">Copyright<span class="f14">&copy;</span> JEPICO Corporation. All rights reserved.</p>
+</footer>
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
+<script type="text/javascript" src="js/waypoints.min.js"></script>
+<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<!-- <script type="text/javascript" src="js/scripts.min.js"></script> -->
+<script src="js/to-top.js"></script>
+</body>
+</html>

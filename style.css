@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,body {
+	color: #4d4d4d;
+	margin: 0;
+	padding: 0
+}
+
+a,p,li {
+	color: #4d4d4d;
+	text-decoration: none;
+	list-style: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+header {
+	width: 100%;
+	height: 152px;
+	padding-top: 24px;
+	background: url(./images/header-bg.jpg);
+}
+
+.hd-detail {
+	width: 960px;
+	margin: 0 auto;
+}
+.hd-box {
+	height: 37px;
+	position: relative;
+}
+
+.hd-box .left {
+	float: left;
+	position: absolute;
+	top: 0;
+	left:0;
+
+}
+
+.hd-box .right {
+	width: 280px;
+	float: left;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+	right:0;
+}
+
+.hd-box .left a {
+	color:#025aa0;
+}
+
+.hd-box .right a {
+	font-size: 13px;
+}
+
+nav {
+	width: 960px;
+	margin: 0 auto;
+	padding: 0;
+	clear: both;
+}
+
+nav ul {
+	width: 960px;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li{
+	margin-top: 35px;
+	padding: 0;
+	float: left;
+}
+
+nav ul li a{
+display: block;
+}
+
+nav ul li.btn1 a{
+	width: 240px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background: url(./images/nav1-off.png);
+	background-size: 100%;
+}
+
+nav ul li.btn1 a:hover{
+	background: url(./images/nav1-on.png);
+}
+
+nav ul li.btn2 a{
+	width: 239px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background: url(./images/nav2-off.png);
+	background-size: 100%;
+}
+
+nav ul li.btn2 a:hover{
+	background: url(./images/nav2-on.png);
+}
+
+nav ul li.btn3 a{
+	width: 240px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background: url(./images/nav3-off.png);
+	background-size: 100%;
+}
+
+nav ul li.btn3 a:hover{
+	background: url(./images/nav3-on.png);
+}
+
+nav ul li.btn4 a{
+	width: 241px;
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background: url(./images/nav4-off.png);
+	background-size: 100%;
+}
+
+nav ul li.btn4 a:hover{
+	background: url(./images/nav4-on.png);
+}
+
+h2 {
+	color:#025aa0;
+	font-size: 18px;
+	text-align: center;
+	padding: 60px 0;
+	font-weight: normal;
+}
+
+.spc {
+	width: 960px;
+	margin: 0 auto;
+}
+
+.spc .box {
+	width: 395px;
+	float: left;
+	margin-right: 170px;
+}
+
+.spc .box hr,.spc .box0 hr {
+	border-bottom: 2px solid #025aa0;
+}
+
+.spc .box:nth-last-child(1) {
+	margin-right: 0;
+}
+
+.spc .box .bled1,.spc .box0 .bled1 {
+	width: 56px;
+	height: 56px;
+	margin: 0 auto;
+	background: url(images/star.png) center top no-repeat;
+}
+.spc .box .bled2,.spc .box0 .bled2 {
+	width: 56px;
+	height: 56px;
+	margin: 0 auto;
+	background: url(images/book.png) center top no-repeat;
+}
+
+.spc .box h3,.spc .box0 h3 {
+	color:#025aa0;
+	font-size: 18px;
+	text-align: center;
+	text-align: center;
+	font-weight: normal;
+}
+
+ul.one {
+	padding: 0;
+	height: 390px;
+}
+
+ul.one li {
+	font-size: 14px;
+	margin: 0 0 15px 0;
+	padding: 0 0 0 16px;
+	background: url(images/bled-t.gif) left 9px no-repeat;
+	line-height: 2em
+}
+
+
+ul.two {
+	padding: 0;
+	height: 390px;
+	background: url(images/bled-e.gif) left 9px no-repeat;
+}
+
+ul.two li {
+	font-size: 14px;
+	padding-left: 23px;
+	margin-bottom: 13px;
+	line-height: 2em
+}
+
+span.ear {
+	color:#025aa0;
+}
+
+span.ear2 {
+	color:#96c332;
+}
+
+footer {
+	color: #FFFFFF;
+	background-color: #666666;
+	height: auto;
+	margin-top: 100px;
+	padding-top: 80px;
+}
+
+footer a {
+	color: #FFFFFF!important;
+}
+
+table#footer {
+	width: 960px;
+	margin: 0 auto;
+}
+
+table#footer tr {
+	height: 70px;
+	vertical-align: top;
+}
+
+table#footer tr td.one1{
+	width: 20px;
+	height:  21px;
+	background: url(images/footer-bled1.gif) left 2px no-repeat;
+}
+
+table#footer tr td.one2{
+	width: 20px;
+	height:  21px;
+	background: url(images/footer-bled2.gif) left 2px no-repeat;
+}
+
+table#footer tr td.one3{
+	width: 20px;
+	height:  21px;
+	background: url(images/footer-bled3.gif) left 2px no-repeat;
+}
+
+table#footer tr td.one4{
+	width: 20px;
+	height:  21px;
+	background: url(images/footer-bled4.gif) left 2px no-repeat;
+}
+
+table#footer tr td.two{
+	font-size: 14px;
+	width: 190px;
+	padding-left: 0.5em;
+	vertical-align: top;
+}
+
+table#footer tr td.three{
+	font-size: 11px;
+	width: 80px;
+	height: 12px;
+	text-align: left;
+	border-left: #808080 1px solid;
+	display: block;
+}
+
+table#footer tr td.four{
+	font-size: 11px;
+}
+
+footer .f-nav,footer .f-nav a {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-align: center;
+}
+
+footer .cop {
+	color: #FFFFFF;
+	font-size: 10px;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 20px;
+}
+
+span.f14 {
+	font-size: 18px;
+	vertical-align: middle;
+}
+
+hr.foot {
+	width: 100%;
+	border-bottom: 1px #FFFFFF solid;
+	margin: 0 auto;
+	padding: 0;
+}
+
+span.kei {
+	width: 1px;
+	height: 12px;
+	border-left: #808080 1px solid;
+}
+
+/* ########## BTN ########## */
+#page-top {
+    position: fixed;
+    bottom: 20px;
+    right: 25px;
+    
+}
+#page-top a {
+    width: 45px;
+	height: 45px;
+	background: url(images/to-top-btn.png) left top no-repeat;
+    display: block;
+}
+#page-top a:hover {
+    opacity: 0.85 ;
+}
+
+
+@media screen and ( min-width:1130px )
+{
+	.move-page-top:hover
+	{
+		opacity: 0.85 ;
+	}
+}
+
+/* ########## 959px 以下 ########## */
+@media (max-width: 959px) {
+
+.sp-wrap {
+width: 95%;
+margin: 0 auto;
+}
+.spc {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.spc .box {
+	width: 95%;
+	margin: 0 auto;
+	float: none;
+}
+
+.spc .box0 {
+	width: 92%;
+	margin: 0 auto;
+	padding-left: 3%;
+	float: none;
+}
+
+hr.topline {
+	width: 100%;
+	height: 4px;
+	border-bottom: 4px #28458f solid;
+	margin: 0;
+	padding: 0
+}
+
+ul.two li {
+	font-size: 13px;
+	padding-left: 23px;
+	margin: 0 0 18px 0;
+	line-height: 2em
+}
+
+h2 {
+	color:#025aa0;
+	font-size: 14px;
+	text-align: center;
+	padding: 60px 0;
+	font-weight: normal;
+}
+
+footer {
+	color: #FFFFFF;
+	background-color: #666666;
+	height: auto;
+	margin-top: 100px;
+	padding-top: 40px;
+}
+
+table#footer-sp {
+	width: 95%;
+	margin: 0 auto;
+}
+
+table#footer-sp tr {
+	width: 100%;
+	height: 30px;
+}
+
+table#footer-sp tr td.sp-one{
+	font-size: 13px;
+	margin: 0;
+	padding: 15px 0 0 0;
+	vertical-align: top;
+	width: auto;
+
+}
+
+table#footer-sp tr td.sp-one img {
+vertical-align:top
+}
+
+table#footer-sp tr td.sp-two {
+	width: 100%;
+	font-size: 11px;
+	padding: 10px 0 15px 0;
+	line-height: 3em;
+}
+
+
+}
+
+
+
+
+
+/* ########## Common ########## */
+.clearfix:after {  
+  content: ".";   
+  display: block;   
+  height: 0;   
+  clear: both;   
+  visibility: hidden;  
+}  
+  
+.clearfix { display: inline-table; }  
+  
+/* Hides from IE-mac \*/  
+* html .clearfix { height: 1%; }  
+.clearfix { display: block; }  
+/* End hide from IE-mac */ 
+
+@media screen and (max-width: 959px){
+#pcon {display:none!important;}
+}
+
+@media screen and (min-width:960px){
+#spon {display:none!important;}
+}
